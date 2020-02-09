@@ -1,0 +1,91 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[backend=bibtex, style=authoryear]{biblatex}
+
+\usepackage[mmddyyyy,hhmmss]{datetime}
+\usepackage{xcolor}
+
+\usepackage{hyperref}[hidelinks]
+\definecolor{hyperblue}{rgb}{0,0,0.7}
+
+\hypersetup{
+	colorlinks = true, %Colours links instead of ugly boxes
+	urlcolor = hyperblue, %Colour for external hyperlinks
+	linkcolor = hyperblue, %Colour of internal links
+    anchorcolor = hyperblue,
+    citecolor = hyperblue,
+    filecolor = hyperblue,
+     }
+\definecolor{nicholasCol}{RGB}{203,97,63}
+\newcommand{\nicholas}[1]{{\color{nicholasCol} [\textbf{NS:} #1 (\today\ \currenttime)]}}
+
+% \addbibresource{~/Dropbox/TAGreview/PhDreferences.bib}
+
+\textwidth=470pt
+\oddsidemargin=0pt
+\topmargin=0pt
+\headheight=0pt
+\textheight=650pt
+\headsep=0pt
+
+\pdfpagewidth=\paperwidth
+\pdfpageheight=\paperheight
+
+\title{Statement of Research}
+
+
+\author{Nicholas Santantonio}
+\date{\today}
+
+
+\newcommand{\gxe}{G$\times$E}
+\newcommand{\gxg}{G$\times$G}
+
+
+\begin{document}
+
+\section*{\centering Statement of Research}
+\begin{center} Nicholas Santantonio \end{center}
+
+\noindent In the face of climate change, farms will have less access to agronomic inputs while they strive to maintain and update sustainable agricultural practices. This leaves genetics as the primary target for improvement of our food systems. Plant response to stress is largely quantitative in nature, driven by the complex interaction between genes and the environment throughout growth and development. Integration of quantitative genetics, genomics, and digital agriculture will be essential for development and deployment of the $21^{st}$ century breeding technologies that will expedite genetic improvement to specific environments.
+
+\subsection*{Increasing selection intensity and reducing cycle times}
+
+The most easily exploited terms in the breeder's equation are cycle time and selection intensity. With affordable marker platforms that can allow information sharing across relatives, resources can be reallocated toward increasing the number of lines that are genotyped and evaluated while reducing replication. Increasing the flow of genotype-phenotype information from a breeding program will allow for genomics-informed decision making to advance lines faster and recycle materials earlier. Through simulation and collaboration with the new wheat breeder, I intend to investigate strategies to deploy these new technologies in the wheat breeding program, as well as with other programs at CSU, across the nation and around the globe. 
+
+Aerial phenotypes can be used in multi-trait models to substantially increase trial sizes without increasing the number of harvested plots, thus increasing selection intensity. Observed correlated traits such as multi-spectral imaging can drastically aid in prediction of unobserved traits that are difficult or expensive to measure, such as grain yield. High-throughput phenotypes may also be used to account for spatial variation. Optimal contributions can leverage genome-wide information to recycle materials at earlier stages while minimizing the loss of genetic diversity. Combining these concepts with an economic selection index developed from commercial distributors (e.g. grain elevators) should maximize the genetic improvement and product development. 
+
+I also intend to investigate the efficacy of convolutional neural networks (CNNs) to extract more meaningful information from aerial plot images. Using a genetic loss function to burn-in on genetic predictors while ignoring micro-environmental effects, CNNs may be trained to find genotype specific growth patterns associated with yield performance. There may also be potential to harness three dimensional deep learning models to extract genetic information on growth, modeling time as the third dimension.
+
+The infrastructure to support regular genotyping and proximal sensing must be developed before a breeding program is overwhelmed by incoming data. I intend to help establish databases, implement quality control and develop standard operating procedures. Investigation into optimal trial designs will be conducted to leverage all phenotypic information available, using genotypic information to link otherwise unrelated trials and traits. As informatics infrastructure is developed, the impact of pushing generation times toward biological and logistical limits through rapid-cycling can be evaluated. 
+
+\subsection*{Integration of genomics and digital agriculture to shed light on \gxe}
+
+Interest in sustainable agriculture has brought renewed attention to forage crops, which can increase soil nitrogen, sequester carbon and reduce weed populations. These crops can also be adapted to marginal lands, leaving more flexibility for farmers and less competition with food crops. Valued in 2018 at 
+\$539 million(\href{https://www.nass.usda.gov/Quick_Stats/Ag_Overview/stateOverview.php?state=COLORADO}{USDA, 2019}), alfalfa is an important perennial legume forage for Colorado farmers, yet CSU currently lacks a forage breeding program. I intend to build a lab with a focus on the quantitative genetics of plant growth and development using alfalfa as a model, with the potential to release locally adapted alfalfa varieties.
+
+Forages are an almost ideal model organism for integrating quantitative genomics and proximal sensing to understand plant growth and response to differential stress. Multiple cuts through several years allow for repeated measurements of growth through time, while the harvestable product can be imaged directly during each regrowth cycle.  Beneficial allele enrichment in alfalfa is arduous due to high inbreeding depression and the autotetraploid nature of the crop. As an obligate out-crosser, alfalfa must be bred on a population level, where varieties are released as synthetics to avoid inbreeding and exploit population-level heterosis. This has limited implementation of marker-based selection strategies because most methods are individual-based. 
+
+I recently obtained funding through a US Alfalfa Farmer Research Initiative (USAFRI) grant to develop a population-level genomic prediction framework to help model growth through time. Using bulked DNA from many individuals, the genomic prediction framework can operate on allele frequencies in a population as opposed to allele counts in an individual. Genomic relationships between populations can then be used in longitudinal random regression models to build genotype specific growth curves. Moving forward, I want to evaluate how plasticity in growth and response to stress allows for stability or sensitivity to varying environments. This framework can also be used to track allele frequency changes through time, allowing for identification loci under natural selection for persistence to differential stress.% and appropriately reweighted in the prediction model. 
+
+% This framework will allow for prediction of additive effects for genetic gain, as well as dominance effects to exploit population level heterosis. 
+
+New populations will be formed using mathematical optimization to determine optimal contributions of parent varieties. Populations will then be planted in optimal proportions and randomly inter-mated to maximize beneficial population allele frequencies in the resulting seed lot, while minimizing inbreeding. Once shown to be effective, this strategy could revolutionize the way alfalfa seed is produced, with new varieties being defined and created by their \emph{parents}. Farmer seed would be produced by planting parental populations in optimal proportions, making new varieties rapidly available. The reduced cost of seed production could make alfalfa an affordable one or two year rotation crop for field rejuvenation.
+
+
+\subsection*{Cropping systems integration}
+
+Crops are a single component of an agronomic ecological system, which also includes soil microorganisms, endophytes, the animals that feed on those crops and the microbiome of those animals. Other than host-pathogen interactions, little attention has been paid to genomic interactions between these organisms (i.e. \gxg), despite an overall notion that they are important. These interactions can be thought of as a special case of the \gxe\ problem, where the genetic covariance of the ``environment'' (e.g. soil microorganisms) can be determined by genotyping that ``environment''. 
+
+Legumes can form symbiotic relationships with nitrogen fixing bacteria, \emph{Rhizobium}. Unfortunately, the signaling and infection process for nodulation is typically reduced or absent under moderate to high soil nitrogen levels. Genetic increases in nodulation could allow for the use of less chemical fertilizer, reducing the environmental impact of nitrogen runoff. I aspire to build \gxg\ prediction models for simultaneous selection of host variety and symbiont to increase the rate of colonization and nitrogen fixation, even when some nitrogen is available in the soil.
+
+I also seek to establish a collaboration with the animal nutritionists, dairy farmers, and animal genetics companies to investigate the potential for synergistic forage and animal breeding. Instead of breeding animals independently of their feed, we can start to breed specialized animals to specialized feeds. Bringing animal genetics, nutrition, and farming communities together with forage breeders would set precedent for future long-term integrated breeding operations.
+
+\subsection*{Research philosophy}
+
+In the era of big data, a shift away from small designed experiments to large observational studies at the breeding program scale is inevitable. When genotyped, stored, and made publicly available with FAIR data principals, the vast amount of data generated in a breeding program becomes a treasure trove for asking questions and informing breeding decisions. Genotyping at this scale is feasible given the drastic reduction in cost, and can be further offset by clever experimental design that trades replication at an individual level for replication at the genetic level.
+
+I believe in a collaborative model, where breeding programs do not operate in isolation. They share germplasm, resources, expertise, and most importantly, ideas. I intend to contribute to the collaborative effort at CSU and across the globe to build the foundational capabilities needed to deploy the latest technology for variety development. As climate change progresses, heat, drought, intense storms and hard frosts will be the new norm, and we must work together to help defend our food security through accelerated genetic improvement. 
+
+\end{document}
