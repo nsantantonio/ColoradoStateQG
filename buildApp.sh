@@ -9,3 +9,8 @@ pdflatex SantantonioTeachingStatement.tex
 pdflatex SantantonioContributionToDiversityEquityInclusion.tex
 
 pdftk SantantonioResearchStatement.pdf SantantonioTeachingStatement.pdf SantantonioContributionToDiversityEquityInclusion.pdf cat output SantantonioCSUapplication.pdf
+
+cp SantantonioCoverLetter.tex SantantonioCoverLetterNoSig.tex
+sed -i '/includegraphics/c\\\vspace{2cm}' SantantonioCoverLetterNoSig.tex
+pdflatex SantantonioCoverLetterNoSig.tex
+pdflatex SantantonioCoverLetterNoSig.tex
