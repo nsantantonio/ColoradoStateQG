@@ -1,0 +1,11 @@
+pdflatex SantantonioCoverLetter.tex
+pdflatex SantantonioResearchStatement.tex 
+pdflatex SantantonioTeachingStatement.tex 
+pdflatex SantantonioContributionToDiversityEquityInclusion.tex
+
+pdflatex SantantonioCoverLetter.tex
+pdflatex SantantonioResearchStatement.tex 
+pdflatex SantantonioTeachingStatement.tex 
+pdflatex SantantonioContributionToDiversityEquityInclusion.tex
+
+pdftk SantantonioResearchStatement.pdf SantantonioTeachingStatement.pdf SantantonioContributionToDiversityEquityInclusion.pdf cat output SantantonioCSUapplication.pdf
